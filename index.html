@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-commerce Product Showcase</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<!-- Header with navigation -->
+<header class="site-header">
+    <div class="logo">E-Store</div>
+    <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="shop.html">shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <img id="hero-img" src="div logo resell.png" alt="">
+        <h1>Find Your Next Favorite Thing</h1>
+        <p>Top quality electronics, fashion, and lifestyle gear. Curated for you.</p>
+        <a href="#products" class="hero-btn">Shop Now</a>
+    </div>
+</section>
+
+<body>
+
+    <div id="instructionPanel" class="collapsed">
+        <div class="strip-header">
+            <h2>How to Use NEKTAR Website</h2>
+            <span id="arrow">&#9660;</span>
+            <button id="closeInstructionBtn">✖</button>
+        </div>
+
+        <div class="instruction-content">
+            <div class="brand-img">
+                <img src="your-brand-image.jpg" alt="Nektar Logo">
+            </div>
+
+            <div class="text-block">
+                <h3>Welcome to NEKTAR</h3>
+                <p>NEKTAR is your go-to thrift store for handpicked vintage and modern fashion pieces.</p>
+                <ul>
+                    <li>Navigate through categories using the top navigation bar.</li>
+                    <li>Click any product to view details and checkout options.</li>
+                    <li>Use the cart icon to manage your selected items.</li>
+                    <li>Visit the “Explore” section for latest drops and sales.</li>
+                    <li>Check out using secure payment methods with quick delivery.</li>
+                </ul>
+                <p>Need help? Reach us through the contact section in the footer.</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="https://discord.com" target="_blank"><img src="discord-icon.png" alt="Discord"></a>
+                <a href="https://telegram.org" target="_blank"><img src="telegram-icon.png" alt="Telegram"></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const instructionPanel = document.getElementById("instructionPanel");
+        const stripHeader = instructionPanel.querySelector(".strip-header");
+        const closeButton = document.getElementById("closeInstructionBtn");
+
+        // Toggle on strip click
+        stripHeader.addEventListener("click", () => {
+            instructionPanel.classList.toggle("expanded");
+        });
+
+        // Shrink when close button is clicked
+        closeButton.addEventListener("click", (e) => {
+            e.stopPropagation(); // prevents stripHeader from re-opening it
+            instructionPanel.classList.remove("expanded");
+        });
+
+        // Collapse when clicking outside
+        document.addEventListener("click", (e) => {
+            if (!instructionPanel.contains(e.target)) {
+                instructionPanel.classList.remove("expanded");
+            }
+        });
+    </script>
+
+
+    </div>
+    </div>
+    </div>
+    <script>
+        const instructionPanel = document.getElementById("instructionPanel");
+        const stripHeader = instructionPanel.querySelector(".strip-header");
+        const closeButton = document.getElementById("closeInstructionBtn");
+
+        // Expand when hovered
+        stripHeader.addEventListener("mouseenter", () => {
+            instructionPanel.classList.add("expanded");
+        });
+
+        // Shrink on outside click
+        document.addEventListener("click", (e) => {
+            if (!instructionPanel.contains(e.target)) {
+                instructionPanel.classList.remove("expanded");
+            }
+        });
+
+        // Shrink when close button is clicked
+        closeButton.addEventListener("click", () => {
+            instructionPanel.classList.remove("expanded");
+        });
+    </script>
+
+
+
+
+    <h1 class="main-title">Shop Our Collection</h1>
+    <div class="product-grid" id="productGrid">
+        <section id="productGrid" class="product-grid">
+            <div class="product-card" onclick="location.href='shop.html#apple-airpods-pro-2'">
+                <img src="picsre/apple airpods.jpeg" alt="Apple Airpods Pro 2">
+                <div class="product-title">Apple Airpods Pro 2</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#aripods-max'">
+                <img src="picsre/Apple AirPod Max - White.jpeg" alt="Aripods Max">
+                <div class="product-title">Aripods Max</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#hoodies'">
+                <img src="picsre/" alt="Hoddies">
+                <div class="product-title">Hoddies</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#watches'">
+                <img src="picsre/watches.jpeg" alt="Watches">
+                <div class="product-title">Watches</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#jbl'">
+                <img src="picsre/jbl main.jpeg" alt="JBL">
+                <div class="product-title">JBL</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#colognes'">
+                <img src="picsre/c" alt="COLOGNES">
+                <div class="product-title">COLOGNES</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#sneakers'">
+                <img src="https://via.placeholder.com/150?text=SNEAKERS" alt="SNEAKERS">
+                <div class="product-title">SNEAKERS</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#bracelete'">
+                <img src="picsre/bracelet.jpeg" alt="BRACELETE">
+                <div class="product-title">BRACELETE</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#tshirts-shirts'">
+                <img src="picsre/t shirt.jpeg" alt="TSHIRTS/SHIRTS">
+                <div class="product-title">TSHIRTS/SHIRTS</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#jeans-cargos'">
+                <img src="picsre/jeans.jpeg" alt="JEANS /CARGOS">
+                <div class="product-title">JEANS /CARGOS</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#caps'">
+                <img src="picsre/caps.jpeg" alt="CAPS">
+                <div class="product-title">CAPS</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#chains'">
+                <img src="picsre/chains.jpeg" alt="CHAINS">
+                <div class="product-title">CHAINS</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#headphones'">
+                <img src="picsre/headphones.jpeg" alt="HEADPHONES">
+                <div class="product-title">HEADPHONES</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#iphones'">
+                <img src="https://via.placeholder.com/150?text=IPHONES" alt="IPHONES">
+                <div class="product-title">IPHONES</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#apple-pencil'">
+                <img src="https://via.placeholder.com/150?text=APPLE%20PENCIL" alt="APPLE PENCIL">
+                <div class="product-title">APPLE PENCIL</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#samsung'">
+                <img src="https://via.placeholder.com/150?text=SAMSUNG" alt="SAMSUNG">
+                <div class="product-title">SAMSUNG</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#guide'">
+                <img src="https://via.placeholder.com/150?text=GUIDE" alt="GUIDE">
+                <div class="product-title">GUIDE</div>
+            </div>
+            <div class="product-card" onclick="location.href='shop.html#haul'">
+                <img src="https://via.placeholder.com/150?text=HAUL" alt="HAUL">
+                <div class="product-title">HAUL</div>
+            </div>
+        </section>
+
+    </div>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2 class="fade-in">About HAUL CAT</h2>
+                <p class="slide-in">
+                    At HAUL CAT, we believe every paw deserves premium care. Our lightweight and ultra-absorbent litter
+                    solutions are crafted to keep your cats comfy and your homes fresh. Trusted by thousands of cat
+                    parents worldwide.
+                </p>
+            </div>
+            <div class="about-img slide-in-right">
+                <img src="your-cat-image.jpg" alt="Happy Cat" />
+            </div>
+        </div>
+        <div class="about-icons">
+            <div class="icon scale-up"><img src="icon-eco.png" alt="Eco-friendly">
+                <p>Eco-Friendly</p>
+            </div>
+            <div class="icon scale-up"><img src="icon-fast.png" alt="Fast Delivery">
+                <p>Fast Delivery</p>
+            </div>
+            <div class="icon scale-up"><img src="icon-quality.png" alt="Top Quality">
+                <p>Premium Quality</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-deals">
+        <h2 class="section-title">Best Deals</h2>
+        <div class="deals-container">
+            <a href="shop.html" class="deal-card">
+                <img src="images/deal1.jpg" alt="Deal 1">
+                <div class="deal-info">
+                    <h3>Airpods Pro 2</h3>
+                    <p>Now at ₹14,999</p>
+                </div>
+            </a>
+
+            <a href="shop.html" class="deal-card">
+                <img src="images/deal2.jpg" alt="Deal 2">
+                <div class="deal-info">
+                    <h3>Nike Sneakers</h3>
+                    <p>From ₹4,299</p>
+                </div>
+            </a>
+
+            <a href="shop.html" class="deal-card">
+                <img src="images/deal3.jpg" alt="Deal 3">
+                <div class="deal-info">
+                    <h3>Smart Watch</h3>
+                    <p>Only ₹1,999</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="fade-in">Get in Touch</h2>
+            <p class="slide-in">We'd love to hear from you. Reach out through any of the platforms below.</p>
+
+            <div class="contact-methods">
+                <div class="contact-card scale-up">
+                    <img src="picsre/Email icon.jpeg" alt="Email">
+                    <h4>Email Us</h4>
+                    <a href="mailto:support@haulcat.com">support@haulcat.com</a>
+                </div>
+
+                <div class="contact-card scale-up">
+                    <img src="picsre/discord.jpeg" alt="Discord">
+                    <h4>Discord</h4>
+                    <a href="https://discord.gg/YOUR_LINK" target="_blank">Join Our Server</a>
+                </div>
+
+                <div class="contact-card scale-up">
+                    <img src="picsre/instagram.jpeg" alt="Instagram">
+                    <h4>Instagram</h4>
+                    <a href="https://instagram.com/YOUR_PROFILE" target="_blank">@haulcat.official</a>
+                </div>
+
+                <div class="contact-card scale-up">
+                    <img src="picsre/Telegram Logo.jpeg" alt="Telegram">
+                    <h4>Telegram</h4>
+                    <a href="https://t.me/YOUR_LINK" target="_blank">@haulcat_support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        });
+
+        document.querySelectorAll('.fade-in, .slide-in, .slide-in-right, .scale-up').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
